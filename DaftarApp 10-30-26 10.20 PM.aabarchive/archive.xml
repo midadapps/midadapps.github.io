@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <Name>أمين حساباتي</Name>
+  <PackageName>com.daftar.almahal</PackageName>
+  <PackageVersionCode>2</PackageVersionCode>
+  <PackageVersionName>2.0</PackageVersionName>
+  <PackageFormat>aab</PackageFormat>
+  <CreationDate>639289848303194496</CreationDate>
+  <SolutionName>DaftarApp</SolutionName>
+  <SolutionPath>C:\Users\Lenovo\source\repos\DaftarApp\DaftarApp.slnx</SolutionPath>
+  <Status></Status>
+  <MinSdkVersion>21</MinSdkVersion>
+  <MaxSdkVersion>36</MaxSdkVersion>
+  <Configuration>
+    <DebugMode>false</DebugMode>
+  </Configuration>
+  <Comment />
+  <LastUsedKeystore>C:\Users\Lenovo\AppData\Local\Xamarin\Mono for Android\Keystore\midad\midad.keystore</LastUsedKeystore>
+  <TimeStampingAuthority />
+  <LastInsightsUploadDate>0</LastInsightsUploadDate>
+</Archive>
