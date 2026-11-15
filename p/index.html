@@ -41,8 +41,8 @@ async function load() {
     const place = [p.province, p.area].filter(Boolean).join(' - ');
     const rows = [['الاختصاص', p.specialty], ['المنطقة', place], ['العنوان', p.address], ['أوقات الدوام', p.hours], ['الهاتف', p.phone]]
       .filter(x => x[1]).map(x => `<div class="row"><b>${x[0]}</b><span>${esc(x[1])}</span></div>`).join('');
-    const dir = p.lat != null ? `<a class="btn sec" href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}">🧭 الاتجاهات إلى ${esc(type || 'المكان')}</a>` : '';
-    const tel = p.phone ? `<a class="btn sec" href="tel:${esc(p.phone)}">📞 اتصال</a>` : '';
+    const dir = p.lat != null ? `<a class="btn sec" href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}">الاتجاهات إلى ${esc(type || 'المكان')}</a>` : '';
+    const tel = p.phone ? `<a class="btn sec" href="tel:${esc(p.phone)}">اتصال</a>` : '';
     app.innerHTML = `<div class="hero">${logo}<div class="type">${esc(type)}</div><h1>${esc(p.name)}</h1></div>
       ${rows ? `<div class="card">${rows}</div>` : '<div style="height:20px"></div>'}
       <a class="btn main" href="midad://p/${id}">${p.acceptRequests ? 'احجز موعداً عبر تطبيق مِداد' : 'افتح في تطبيق مِداد'}</a>
